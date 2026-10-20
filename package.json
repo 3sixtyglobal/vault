@@ -1,5 +1,5 @@
 {
-	"name": "@3sixty/vault",
+	"name": "3sixty-vault",
 	"version": "0.0.0",
 	"description": "Vault components for consistent key management, encryption, and secret workflows",
 	"repository": {
