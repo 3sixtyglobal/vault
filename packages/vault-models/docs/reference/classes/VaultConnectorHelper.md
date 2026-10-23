@@ -70,11 +70,11 @@ Verify a JWT using a vault connector.
 
 #### Type Parameters
 
-##### T
+##### T {#t}
 
 `T` *extends* `JWTHeaderParameters`
 
-##### U
+##### U {#u}
 
 `U` *extends* `JWTPayload`
 

@@ -344,7 +344,7 @@ Store a secret in the vault.
 
 #### Type Parameters
 
-##### T
+##### T {#t}
 
 `T`
 
@@ -400,7 +400,7 @@ Get a secret from the vault.
 
 #### Type Parameters
 
-##### T
+##### T {#t-1}
 
 `T`
 
