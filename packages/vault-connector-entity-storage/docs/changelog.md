@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.20.0-next.2](https://github.com/3sixtyglobal/vault/compare/vault-connector-entity-storage-v0.20.0-next.1...vault-connector-entity-storage-v0.20.0-next.2) (2026-10-26)
+
+
+### Features
+
+* release to next [skip ci] ([#11](https://github.com/3sixtyglobal/vault/issues/11)) ([ac3d481](https://github.com/3sixtyglobal/vault/commit/ac3d4819869724df40e2e9a8d68e28a20353525b))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @3sixty/vault-models bumped from 0.20.0-next.1 to 0.20.0-next.2
+
 ## [0.20.0-next.1](https://github.com/3sixtyglobal/vault/compare/vault-connector-entity-storage-v0.20.0-next.0...vault-connector-entity-storage-v0.20.0-next.1) (2026-10-23)
 
 

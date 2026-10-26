@@ -1,6 +1,6 @@
 {
 	"name": "@3sixty/vault-connector-hashicorp",
-	"version": "0.20.0-next.1",
+	"version": "0.20.0-next.2",
 	"description": "HashiCorp Vault connector for transit cryptography and KV secret workflows",
 	"repository": {
 		"type": "git",
@@ -38,7 +38,7 @@
 		"@3sixty/crypto": "next",
 		"@3sixty/logging-models": "next",
 		"@3sixty/nameof": "next",
-		"@3sixty/vault-models": "0.20.0-next.1",
+		"@3sixty/vault-models": "0.20.0-next.2",
 		"@3sixty/web": "next"
 	},
 	"devDependencies": {
