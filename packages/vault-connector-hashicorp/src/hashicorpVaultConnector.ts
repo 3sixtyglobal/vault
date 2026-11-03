@@ -11,6 +11,7 @@ import {
 	BaseError,
 	ComponentFactory,
 	Converter,
+	DurationConstants,
 	GeneralError,
 	Guards,
 	Is,
@@ -96,7 +97,8 @@ export class HashicorpVaultConnector implements IVaultConnector, IHealthProvider
 	 * The default TTL in milliseconds for cached key metadata.
 	 * @internal
 	 */
-	private static readonly _DEFAULT_KEY_METADATA_CACHE_TTL_MS: number = 30000;
+	private static readonly _DEFAULT_KEY_METADATA_CACHE_TTL_MS: number =
+		30 * DurationConstants.MsPerSecond;
 
 	/**
 	 * The configuration for the vault connector.
