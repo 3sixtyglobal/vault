@@ -4,7 +4,7 @@
 import { BaseError, Converter, RandomHelper } from "@3sixty/core";
 import { ChaCha20Poly1305 } from "@3sixty/crypto";
 import { VaultEncryptionType, VaultKeyType } from "@3sixty/vault-models";
-import { FetchHelper, HttpMethod } from "@3sixty/web";
+import { FetchHelper, HttpMethod, MimeTypes } from "@3sixty/web";
 import { cleanupKeys, TEST_VAULT_CONFIG } from "./setupTestEnv.js";
 import { HashicorpVaultConnector } from "../src/hashicorpVaultConnector.js";
 
@@ -47,7 +47,7 @@ function transitUrl(operation: string): string {
 async function transitRequest<T>(operation: string, body: unknown): Promise<T> {
 	const response = await fetch(transitUrl(operation), {
 		method: "POST",
-		headers: { "X-Vault-Token": TEST_VAULT_CONFIG.token, "Content-Type": "application/json" },
+		headers: { "X-Vault-Token": TEST_VAULT_CONFIG.token, "Content-Type": MimeTypes.Json },
 		body: JSON.stringify(body)
 	});
 	const json = (await response.json()) as { data: T };

@@ -6,5 +6,4 @@ import type { IVaultConnector } from "../models/IVaultConnector.js";
 /**
  * Factory for creating vault connectors.
  */
-// eslint-disable-next-line @typescript-eslint/naming-convention
 export const VaultConnectorFactory = Factory.createFactory<IVaultConnector>("vault");

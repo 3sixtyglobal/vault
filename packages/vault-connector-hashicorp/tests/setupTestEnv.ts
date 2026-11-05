@@ -2,6 +2,7 @@
 // SPDX-License-Identifier: Apache-2.0.
 import path from "node:path";
 import { Guards } from "@3sixty/core";
+import { MimeTypes } from "@3sixty/web";
 import * as dotenv from "dotenv";
 import { HashicorpVaultConnector } from "../src/hashicorpVaultConnector.js";
 import type { IHashicorpVaultConnectorConfig } from "../src/models/IHashicorpVaultConnectorConfig.js";
@@ -31,7 +32,7 @@ const apiVersion = TEST_VAULT_CONFIG.apiVersion ?? "v1";
 const baseUrl = `${TEST_VAULT_CONFIG.endpoint}/${apiVersion}`;
 const vaultHeaders = {
 	"X-Vault-Token": TEST_VAULT_CONFIG.token,
-	"Content-Type": "application/json"
+	"Content-Type": MimeTypes.Json
 };
 
 async function enableTransitBackend(): Promise<void> {

@@ -4,7 +4,6 @@
 /**
  * The names of the vault key types.
  */
-// eslint-disable-next-line @typescript-eslint/naming-convention
 export const VaultKeyType = {
 	/**
 	 * Ed25519. (asymmetric)
